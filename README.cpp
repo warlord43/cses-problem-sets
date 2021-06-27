@@ -19,7 +19,7 @@ int main() {
        }
      }if(j==n-1){
        cout<<arr[i]<<endl;
-       i++;
+       break;
      }
    
   }
