@@ -11,11 +11,11 @@ int main(){
  int count=1;
  int result;
  for(i=0;i<n;i++){
-   if(s[i]==s[i+1]){
+   while(s[i]==s[i+1]){
      count++;
-     i++;
    }
    result=max(result,count);
+   count=1;
  }
  cout<<result;
 }
