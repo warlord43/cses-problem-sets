@@ -10,12 +10,14 @@ int main(){
  int i=0;
  int count=1;
  int result;
- for(i=0;i<n;i++){
-   while(s[i]==s[i+1]){
-     count++;
-   }
-   result=max(result,count);
-   count=1;
+while(i<n){
+ while(s[i]==s[i+1]){
+ count++;
+   i++;
  }
+  result=max(result,count);
+  count=1;
+  i++;
+}
  cout<<result;
 }
